@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Установка кодировки и базовых метаданных для корректного отображения на различных устройствах -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лесная Флора и Фауна</title>
+
+  <!-- Подключение шрифтов Montserrat с Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Подключение стилей для контактной формы, шапки и подвала -->
+  <link rel="stylesheet" href="stylesContact.css">
+  <link rel="stylesheet" href="stylesHeader.css">
+  <link rel="stylesheet" href="stylesFooter.css">
+
+  <!-- Подключение внешнего JavaScript-файла -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <!-- Логотип сайта -->
+    <div class="logo">MyLes</div>
+
+    <!-- Навигационное меню -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Стартовая</a></li>
+        <li><a href="main.html">Главная</a></li>
+
+        <!-- Выпадающее меню для каталога -->
+        <li class="dropdown">
+          <a href="#">Каталог</a>
+          <div class="dropdown-content">
+            <a href="#">Вечнозеленые леса</a>
+
+            <!-- Подменю для Вечнозеленых лесов -->
+            <div class="submenu">
+              <a href="#">Влажные тропические</a>
+              <a href="#">Хвойные</a>
+              <a href="#">Жестколистные</a>
+              <a href="#">Мелколиственные</a>
+              <a href="#">Широколиственные</a>
+            </div>
+
+            <a href="#">Листопадные леса</a>
+
+            <!-- Подменю для Листопадных лесов -->
+            <div class="submenu">
+              <a href="#">Лиственные леса умеренного пояса</a>
+              <a href="#">Муссоные</a>
+              <a href="#">Сухотропические листопадные леса</a>
+            </div>
+
+            <a href="#">Тропические леса</a>
+
+            <!-- Подменю для Тропических лесов -->
+            <div class="submenu">
+              <a href="#">Влажные тропические</a>
+              <a href="#">Мангровые</a>
+              <a href="#">Горные вечнозеленые</a>
+              <a href="#">Болотистые</a>
+              <a href="#">Муссонные</a>
+              <a href="#">Саванновые</a>
+            </div>
+
+            <a href="#">Полулистопадные леса</a>
+            <a href="#">Смешанные леса</a>
+            <a href="#">Лиственничные леса</a>
+          </div>
+        </li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contact.html" class="highlight">Обратная связь</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основной раздел страницы -->
+  <div class="main-section">
+    <!-- Информационный блок -->
+    <div class="info">
+      <h1>Есть какой-то вопрос?</h1>
+      <p>Вы можете задать интересующий вас вопрос.</p>
+      <p>Мы будем рады ответить!</p>
+      <p class="small-text">Хотите сотрудничать? Позвоните нам:</p>
+      <p class="small-text">тел: +375 (29) 735-79-24</p>
+    </div>
+
+    <!-- Форма обратной связи -->
+    <div class="feedback-form">
+      <form id="feedbackForm">
+        <div class="form-group">
+          <h1 class="centered">Обратная связь</h1>
+          <p class="small-text centered">Задайте нам свой вопрос</p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Электронная почта:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <div class="send-button">
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Уведомление о результате отправки формы -->
+    <div id="notification" class="notification"></div>
+  </div>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <div class="footer-line">
+      <!-- Логотип в подвале -->
+      <div class="logo">MyLes</div>
+
+      <!-- Иконки социальных сетей -->
+      <div class="social-icons">
+        <img src="icons/inst.png" alt="Icon1">
+        <img src="icons/x.png" alt="Icon2">
+        <img src="icons/vk.png" alt="Icon3">
+      </div>
+    </div>
+
+    <!-- Контактный email -->
+    <div class="footer-line">
+      MyLes@gmail.com
+    </div>
+
+    <!-- Контактный номер телефона -->
+    <div class="footer-line">
+      +375 (29) 735-79-24
+    </div>
+  </footer>
+</body>
+
+</html>

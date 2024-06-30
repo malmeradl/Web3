@@ -1,0 +1,137 @@
+/* Стили для заголовка (header) */
+header {
+  margin: 0;
+  /* Убираем внешние отступы */
+  font-size: 20px;
+  width: 100%;
+  /* Ширина на 100% */
+  background-color: rgba(48, 58, 35, 0.71);
+  display: flex;
+  /* Используем flexbox для расположения элементов */
+  justify-content: space-between;
+  /* Равномерное распределение по горизонтали */
+  align-items: center;
+  /* Выравнивание по центру по вертикали */
+  padding: 30px 20px;
+  /* Внутренний отступ: сверху/снизу 30px, слева/справа 20px */
+  position: fixed;
+  /* Фиксированное позиционирование */
+  top: 0;
+  /* Положение сверху */
+  border-bottom-left-radius: 80px;
+  /* Закругление нижнего левого угла */
+  border-bottom-right-radius: 80px;
+  /* Закругление нижнего правого угла */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Стили для логотипа внутри заголовка */
+header .logo {
+  color: white;
+  margin-left: 50px;
+  /* Левый внешний отступ */
+}
+
+/* Стили для навигационного меню внутри заголовка */
+header nav ul {
+  list-style: none;
+  /* Убираем маркеры списка */
+  display: flex;
+  /* Используем flexbox для расположения элементов */
+  gap: 15px;
+  /* Промежуток между элементами */
+  margin-right: 50px;
+  /* Правый внешний отступ */
+}
+
+/* Стили для элементов списка в навигационном меню */
+header nav ul li {
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+/* Стили для ссылок в навигационном меню */
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  padding: 5px 10px;
+  /* Внутренний отступ: сверху/снизу 5px, слева/справа 10px */
+}
+
+/* Стили для выделенной (активной) ссылки в навигационном меню */
+header nav ul li a.highlight {
+  background-color: #758D18;
+  padding: 30px 30px;
+  /* Внутренний отступ: сверху/снизу 30px, слева/справа 30px */
+  border-bottom-left-radius: 50px;
+  /* Закругление нижнего левого угла */
+  border-bottom-right-radius: 50px;
+  /* Закругление нижнего правого угла */
+}
+
+/* Стили для выпадающего контента в навигационном меню */
+header nav ul li .dropdown-content {
+  display: none;
+  /* Скрытое отображение */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  background-color: rgba(48, 58, 35, 0.9);
+  /* Цвет фона с прозрачностью */
+  z-index: 1;
+  /* Индекс слоя */
+  width: 250px;
+  /* Ширина блока */
+}
+
+/* Стили для ссылок в выпадающем контенте */
+header nav ul li .dropdown-content a {
+  color: rgb(255, 255, 255);
+  /* Цвет текста */
+  padding: 10px 15px;
+  /* Внутренний отступ: сверху/снизу 10px, слева/справа 15px */
+  display: block;
+  /* Блочное отображение */
+}
+
+/* При наведении на элемент с классом dropdown отображаем выпадающий контент */
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* Показываем блок */
+}
+
+/* Стили для подменю (submenu) */
+.submenu {
+  display: none;
+  /* Скрытое отображение */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  background-color: rgba(48, 58, 35, 0.9);
+  /* Цвет фона с прозрачностью */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* Тень */
+  left: -260px;
+  /* Положение слева */
+}
+
+/* При наведении на ссылку в dropdown-content отображаем подменю */
+.dropdown-content a:hover+.submenu {
+  display: block;
+  /* Показываем подменю */
+}
+
+/* Стили для ссылок в подменю */
+.submenu a {
+  padding: 12px 16px;
+  /* Внутренний отступ: сверху/снизу 12px, слева/справа 16px */
+  display: block;
+  /* Блочное отображение */
+  width: 275px;
+  /* Ширина блока */
+}
+
+/* Стили для ссылок в подменю при наведении */
+.submenu a:hover {
+  background-color: rgba(48, 58, 35, 0.71);
+  /* Цвет фона при наведении */
+}

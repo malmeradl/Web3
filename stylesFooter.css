@@ -1,0 +1,35 @@
+footer {
+    background-color: #253609;
+    /* Устанавливаем цвет фона */
+    color: #EBFFCC;
+    /* Устанавливаем цвет текста */
+    padding: 20px;
+    /* Внутренний отступ */
+    font-size: 16px;
+    /* Размер шрифта */
+    width: 100%;
+    /* Ширина на 100% */
+}
+
+.footer-line {
+    margin-bottom: 10px;
+    /* Нижний внешний отступ */
+    display: flex;
+    /* Используем flexbox */
+    align-items: center;
+    /* Выравниваем элементы по вертикали */
+    margin-left: 50px;
+    /* Левый внешний отступ */
+}
+
+.logo {
+    margin-right: 18px;
+    /* Отступ между логотипом и иконками */
+}
+
+.social-icons img {
+    width: 30px;
+    /* Ширина иконок */
+    margin-right: 5px;
+    /* Отступ между иконками */
+}

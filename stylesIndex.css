@@ -1,0 +1,96 @@
+/* Сброс стилей для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для html и body */
+body,
+html {
+  height: 100%;
+  /* Высота на 100% экрана */
+  font-family: 'Montserrat', Arial, sans-serif;
+  /* Основной шрифт */
+}
+
+/* Стили для body */
+body {
+  background: url('images/image1.png') no-repeat center center fixed;
+  /* Фоновое изображение, центрированное и зафиксированное */
+  background-size: cover;
+  /* Масштабирование фона по размеру */
+  display: flex;
+  /* Используем flexbox */
+  flex-direction: column;
+  /* Располагаем элементы в столбец */
+}
+
+/* Стили для основного контента в main */
+main {
+  display: flex;
+  /* Используем flexbox */
+  flex-direction: column;
+  /* Располагаем элементы в столбец */
+  justify-content: center;
+  /* Выравнивание по центру по вертикали */
+  align-items: center;
+  /* Выравнивание по центру по горизонтали */
+  text-align: center;
+  /* Выравнивание текста по центру */
+  flex: 1;
+  /* Занимаем все доступное пространство */
+  color: rgb(230, 230, 230);
+  /* Цвет текста */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Тень текста */
+}
+
+/* Стили для заголовка h1 в main */
+main h1 {
+  font-size: 48px;
+  max-width: 600px;
+  /* Максимальная ширина */
+  font-weight: 500;
+  /* Полужирный шрифт */
+  color: #EBFFCC;
+  /* Цвет текста */
+}
+
+/* Стили для абзацев p в main */
+main p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: #EBFFCC;
+  /* Цвет текста */
+  font-weight: 200;
+  /* Тонкий шрифт */
+  font-style: italic;
+  /* Курсивный стиль */
+}
+
+/* Стили для кнопки .start-button в main */
+main .start-button {
+  font-size: 26px;
+  display: inline-block;
+  /* Блочный элемент */
+  padding: 15px 40px;
+  /* Внутренние отступы */
+  background-color: rgba(48, 58, 35, 0.71);
+  /* Цвет фона с прозрачностью */
+  color: rgb(230, 230, 230);
+  /* Цвет текста */
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  border-radius: 40px;
+  /* Скругление углов */
+  transition: background-color 0.3s;
+  /* Плавный переход цвета фона */
+}
+
+/* Эффект при наведении на кнопку .start-button */
+main .start-button:hover {
+  background-color: rgba(38, 46, 27, 0.71);
+  /* Изменение цвета фона при наведении */
+}

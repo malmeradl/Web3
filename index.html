@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Установка кодировки и базовых метаданных для корректного отображения на различных устройствах -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лесная Флора и Фауна</title>
+
+  <!-- Подключение шрифтов Montserrat с Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Подключение стилей для главной страницы и шапки -->
+  <link rel="stylesheet" href="stylesIndex.css">
+  <link rel="stylesheet" href="stylesHeader.css">
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <!-- Логотип сайта -->
+    <div class="logo">MyLes</div>
+
+    <!-- Навигационное меню -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="highlight">Стартовая</a></li>
+        <li><a href="main.html">Главная</a></li>
+
+        <!-- Выпадающее меню для каталога -->
+        <li class="dropdown">
+          <a href="#">Каталог</a>
+          <div class="dropdown-content">
+            <a href="#">Вечнозеленые леса</a>
+
+            <!-- Подменю для Вечнозеленых лесов -->
+            <div class="submenu">
+              <a href="#">Влажные тропические</a>
+              <a href="#">Хвойные</a>
+              <a href="#">Жестколистные</a>
+              <a href="#">Мелколиственные</a>
+              <a href="#">Широколиственные</a>
+            </div>
+
+            <a href="#">Листопадные леса</a>
+
+            <!-- Подменю для Листопадных лесов -->
+            <div class="submenu">
+              <a href="#">Лиственные леса умеренного пояса</a>
+              <a href="#">Муссоные</a>
+              <a href="#">Сухотропические листопадные леса</a>
+            </div>
+
+            <a href="#">Тропические леса</a>
+
+            <!-- Подменю для Тропических лесов -->
+            <div class="submenu">
+              <a href="#">Влажные тропические</a>
+              <a href="#">Мангровые</a>
+              <a href="#">Горные вечнозеленые</a>
+              <a href="#">Болотистые</a>
+              <a href="#">Муссонные</a>
+              <a href="#">Саванновые</a>
+            </div>
+
+            <a href="#">Полулистопадные леса</a>
+            <a href="#">Смешанные леса</a>
+            <a href="#">Лиственничные леса</a>
+          </div>
+        </li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contact.html">Обратная связь</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основной контент страницы -->
+  <main>
+    <h1>ЛЕСНАЯ</h1>
+    <h1>ФЛОРА И ФАУНА</h1>
+    <p>Начни свое путешествие не выходя из дома</p>
+
+    <!-- Кнопка перехода на основную страницу -->
+    <a href="main.html" class="start-button">НАЧАТЬ</a>
+  </main>
+</body>
+
+</html>
